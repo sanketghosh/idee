@@ -9,15 +9,17 @@ export default function IdeaPostCard({ postContent }: IdeaPostCardProps) {
   return (
     <div className="flex w-full flex-col items-center gap-2 rounded-lg border px-4 py-3 shadow-md">
       <div className="flex w-full items-center justify-between">
-        <p className="text-muted-foreground text-left text-sm font-medium md:text-sm">
+        <p className="text-left text-sm font-medium text-muted-foreground md:text-sm">
           @johndoe69693
         </p>
-        <p className="text-muted-foreground text-left text-sm font-medium">
+        <p className="text-left text-sm font-medium text-muted-foreground">
           12.12.2024
         </p>
       </div>
       <Separator />
-      <p className="text-sm leading-5 md:text-base">{postContent}</p>
+      <p className="text-[13px] leading-5 md:text-sm lg:text-[15px]">
+        {postContent}
+      </p>
       <Separator />
       <div className="flex w-full items-center justify-between">
         <div className="flex items-center gap-2">
